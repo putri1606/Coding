@@ -19,7 +19,7 @@
             <label for="email">email</label>
             <input type="email" name="email" id="email" placeholder="your email@gmail.com" required> <br><br>
             <label for="date_birth">Tanggal Lahir</label>
-            <input type="date" nama="date_birth id=" date_birth" required>
+            <input type="date" nama="date_birth" id=" date_birth" required>
             <br><br>
             <label for="password">Password</label>
             <input type="password" name="password" id="password" placeholder="Your Password" required><br><br>
@@ -31,9 +31,43 @@
             <label for="female">
                 <input type="Radio" name="gender" id="female" value="female">female
             </label><br><br>
-
+            <label for="Hobi">
+                Hobi
+            </label> <br>
+            <label for="Membaca">
+                 <input type="checkbox" name="Membaca" id="Membaca" value="Membaca">Membaca
+            </label> <br>
+            <label for="Berenang">
+                <input type="checkbox" name="Berenang" id="Berenang" value="Berenang">Berenang
+            </label> <br>
+            <label for="Coding">
+               <input type="checkbox" name="Coding" id="Coding" value="Coding">Coding
+            </label> <br> <br>
+            <label for="Alamat">
+                Alamat <br>
+            </label>
+            <textarea name="Alamat" id="Alamat" cols="10" rows="5" placeholder="Masukkan Alamat kamu"></textarea><br><br>
+            <label for="Provinsi">
+                Provinsi <br>
+            </label>
+            <select name="Provinsi" id="Provinsi">
+                <option value="Jawa_Barat">Jawa Barat</option>
+                <option value="Jakarta_Barat">Jakarta Barat</option>
+                <option value="jawa_Timur">Jawa Timur</option>
+            </select>
             <input type="submit" value="send">
             <input type="reset" value="reset">
+        </fieldset>
+    </form>
+    <br>
+    <form action="" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Berkas Lamaran</legend>
+            <label for="CV">
+                Drop Your CV <br>
+            </label>
+            <input type="file" name="Drop Your CV" id="Drop Your CV" accept="pdf, jpg, docx" required multiple> <br><br>
+            <input type="submit" value="Upload">
         </fieldset>
     </form>
 </body>
