@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #Judul-utama {
+            color: rgb(255, 0, 0);
+            font-family: tahoma;
+            font-size: 100px;
+            background-color: aquamarine;
+            text-decoration: underline;
+        }
+        #Paragraf-1 {
+            color: #005350;
+            border: 2px solid black;
+        }
+        .text-brown {
+            color: brown;
+        }
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#Paragraf-1">Paragraf 1</a></li>
+        <li><a href="#Paragraf-2">Paragraf 2</a></li>
+
+        <h1 id="Judul-utama">Artikel</h1>
+    <h2 id="Paragraf-1">Belajar coding untuk anak-anak</h2>
+    <p class="text-brown">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem animi deleniti, quo deserunt magnam totam veritatis assumenda ad ab laudantium optio debitis. Eveniet illo voluptates delectus molestiae ullam numquam veritatis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus voluptatum ratione laudantium sint perferendis ab minima illo nemo, quam consectetur debitis dolor earum consequatur molestias quasi aperiam doloribus magnam dicta?</p>
+
+    <h2 id="Paragraf-2">Apa itu HTML?</h2>
+    <p class="text-brown">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem animi deleniti, quo deserunt magnam totam veritatis assumenda ad ab laudantium optio debitis. Eveniet illo voluptates delectus molestiae ullam numquam veritatis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus exercitationem, laudantium libero dolores inventore officia! Suscipit sequi, reprehenderit ratione voluptatibus culpa, tenetur expedita distinctio explicabo optio natus, repudiandae impedit earum.</p>
+
+    <script>
+        
+        const texts = document.getElementsByClassName("text-brown")
+        for (text of texts) {
+            text.style.color = "blue"
+        }
+
+    </script>
+</body>
+</html>
