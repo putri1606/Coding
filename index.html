@@ -1,34 +1,59 @@
-<!DOCTYPE html
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>belajar html</title></title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-      <h1 class="title">Hello World! </h1>
-      <h2> Hobi:</h2>
-      <ol>
-        <li>memasak</li>
-        <li>tidur</li>
-      </ol>
-       <ol type="A">
-        <li>makan</li>
-        <li>jalan-jalan</li>
-      </ol>
-        
-      <h1>Pelajaran:</h1>
-      <ul>
-        <li>Matematika</li>
-        <li>biologi</li>
-        </ul>
-    
-        <a>
-        <a href="https://www.google.com/">google</a> <br>
-      
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxL6xecv_YWgiELWsZoVjSL1b_5PesPd77gA&s">
-        <img src="img1.jpg"  width="200px" height="100px">
-      <p id="currentTime"></p>
-      <script src="script.js"></script>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game 3D Sederhana</title>
+    <style>
+        body { margin: 0; overflow: hidden; }
+        canvas { display: block; }
+    </style>
+</head>
+<body>
+    <script type="module">
+        import * as THREE from 'https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.module.min.js';
+
+        // Scene, Camera, Renderer
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        const renderer = new THREE.WebGLRenderer();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.body.appendChild(renderer.domElement);
+
+        // Geometry (Cube)
+        const geometry = new THREE.BoxGeometry();
+        const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+        const cube = new THREE.Mesh(geometry, material);
+        scene.add(cube);
+
+        // Lighting (optional for advanced effects)
+        const light = new THREE.DirectionalLight(0xffffff, 1);
+        light.position.set(5, 5, 5).normalize();
+        scene.add(light);
+
+        // Camera position
+        camera.position.z = 5;
+
+        // Animation loop
+        function animate() {
+            requestAnimationFrame(animate);
+            cube.rotation.x += 0.01; // Rotate cube
+            cube.rotation.y += 0.01;
+            renderer.render(scene, camera);
+        }
+        animate();
+
+        // Add interactivity
+        window.addEventListener('click', () => {
+            cube.material.color.set(Math.random() * 0xffffff); // Change color on click
+        });
+
+        // Handle resizing
+        window.addEventListener('resize', () => {
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+        });
+    </script>
+</body>
 </html>
