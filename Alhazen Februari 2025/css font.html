@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS FONT</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            /*text-align: center;*/
+        }
+
+        h1 {
+            color: rgb(255, 0, 0);
+            text-decoration: overline double rgb(0, 0, 255) 2px;
+            /*Harus berurutan dari line, style ,color, thickness DAN JUGA BISA SATU-SATU*/
+            letter-spacing: 20px;
+            text-shadow: 10px 10px 10px rgb(200, 255, 2);
+            /*offset y, offset x, blur radius, color*/
+        }
+
+        p {
+            color: rgb(0, 0, 255);
+            text-transform: capitalize;
+            line-height: 50px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+
+
+        .lora-uniquifier {
+            /*nama class nya terserah*/
+            font-family: "Lora", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        p.hai {
+            font-family: "Lora", serif;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Selamat Datang</h1>
+    <h2 class="hai">Welcome guys</h2>
+    <p>apakah yang dimaksud denhan manusia langka? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut soluta
+        quaerat, a minima quasi nobis earum? Sit similique accusantium exercitationem deserunt, veritatis architecto
+        error repellendus reprehenderit nostrum quos doloribus laborum.</p>
+    <br>
+    <main class="lora-uniquifier">
+        <h2>This is Heading 2</h2>
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quasi asperiores sunt necessitatibus veritatis
+            tempore suscipit consequuntur distinctio veniam nobis unde eligendi, laboriosam maiores minima inventore qui
+            quod. Esse, illo!</h3>
+    </main>
+</body>
+
+</html>
