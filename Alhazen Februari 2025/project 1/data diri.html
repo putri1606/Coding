@@ -8,8 +8,10 @@
 
     <style>
         body {
-            font-family: serif;
-            background-color: rgb(184, 226, 232);
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #b8e2e8;
+            margin: 0;  
+            padding: 0;
         }
         .satu {
             background-color: yellow;
@@ -23,10 +25,14 @@
             
         }
         .kanan {
-            float: left;
+            display: inline-block;
             padding-top: 0px;
             padding-bottom: 20px;
         }
+        .table {
+            width: 100%;
+        }
+        
     </style>
 </head>
 
@@ -36,36 +42,35 @@
     </div>
     <br>
     <div class="kiri">
-        <div>
-         <img src="../../image/putri.jpg" alt="">   
-        </div>
-        <div>
+        <img src="../../image/putri.jpg" alt="">
+    </div>
+    
             <h2>Informasi</h2>
-            <table>
+            <table class="table">
                 <tr>
+                    <td>  
                     <th>Nama</th>
-                    <th>:</th>
-                    <td>Putri Mawar Fadillah</td>
+                    <td>: Putri Mawar Fadillah</td> 
                 </tr>
                 <tr>
-                    <th>Tempat, tanggal lahir</th>
-                    <th>:</th>
-                    <td>Wonosari, 16 Juni 2005</td>
+                    <th>Tempat</th>
+                    <td>: Wonosari</td>
+                </tr>
+                <tr>    
+                    <th>Tanggal lahir</th>
+                    <td>: 16 Juni 2005</td>
                 </tr>
                 <tr>
                     <th>Agama</th>
-                    <th>:</th>
-                    <td>Islam</td>
+                    <td>: Islam</td>
                 </tr>
                 <tr>
                     <th>Alamat</th>
-                    <th>:</th>
-                    <td>Jl. Kp. Melayu Kecil III NO.29</td>
+                    <td>: Jl. Kp. Melayu Kecil III NO.29</td>
                 </tr>
                 <tr>
                     <th>Hobi</th>
-                    <th>:</th>
-                    <td>Menonton film</td>
+                    <td>: Menonton film</td>
                 </tr>
     
             </table>
