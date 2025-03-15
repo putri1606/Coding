@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+</head>
+<style>
+    article { /*untuk yang relative*/
+        border: 1px solid blue;
+        padding: 5px;
+        margin-bottom: 5px;
+        display: inline-block;
+    }
+
+    article#css {
+        width:50%; 
+        height: 50%vw;
+        font-size: 8px;
+    
+        
+    }
+    .text-1 {
+
+        font-size: 2rem; /*cara kejanya tergantung root element yaitu body (2x16)*/
+    }
+    article#html {
+        width: 40%;
+        position: relative;
+        left: 80px;
+        right: 70px;
+        top: 80px;
+        bottom: 70px;
+    }
+    .link {
+        display: block; /*yang kebawah*/
+    }
+    article#css h3 {
+        color: red;
+        display: inline; /*yang ke kiri kanan*/
+        position: absolute;
+        top: 50px;
+        font-size: 50px;
+    }
+    article#css p {
+        display: inline;
+        position: relative;
+        left: 100px;
+        right: 70px;
+        top: 80px;
+        bottom: 70px;
+    }
+    article#text-baru h1 {
+        display: inline-block;
+
+    }
+    div#ask-me {
+        display: fixed;
+        top: 90vh;
+        left: 80vw;
+        background-color: green;
+        color: white;
+        border-radius: 10px;
+        padding: 10px;  
+    }
+</style>
+<body>
+<article id="html">
+    <h3>Belajar HTML</h3>
+    <p class="text-1">HTML adalah bahasa markup yang digunakan untuk membuat dan menyusun konten di web. Dengan HTML, pengguna dapat menentukan struktur halaman web, termasuk elemen seperti teks, gambar, dan tautan.</p>
+</article>
+
+<article id="css">
+    <h3>Belajar CSS</h3>
+    <p class="text-1">CSS adalah bahasa yang digunakan untuk mendesain dan mengatur tampilan halaman web. Dengan CSS, pengembang dapat mengontrol elemen seperti warna, font, dan tata letak.</p>
+    <a class="link" href="https://www.google.com">google</a>
+    <a class="link" href="https://www.alhazen.academy">Alhazen</a>
+</article>
+<article>
+    <h1 class="text-baru">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nemo dicta, ad facere ducimus blanditiis illo voluptas, corrupti dolorem totam cupiditate minus ullam unde. Facere molestias nostrum consequatur deleniti quaerat.</h1>
+    <p class="text-baru 2">welcome to my website</p>
+</article>
+<div id="ask-me">Tanya saya</div>
+</body>
+</html>
