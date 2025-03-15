@@ -1,0 +1,17 @@
+* {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url(../../image/panti.jpeg); 
+    margin: 0px;
+    padding: 0px;
+}
+
+.wrapper {
+    width: 100%;
+    
+}
