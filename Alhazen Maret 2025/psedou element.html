@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo element</title>
+    <style>
+        p::first-line{ /*untuk yang baris pertama saja yang di berikan styling*/
+    color: red;
+    text-decoration: underline blue;
+}
+
+h6::first-letter{ /*untuk yang huruf pertama saja yang di berikan styling*/
+    color: rgb(187, 221, 63);
+    font-size: 25px;
+}
+
+li.top-rank::before{
+    content: '\2606';
+}
+
+li.top-rank::after{
+    content: '\2606';
+}
+
+li.top-rank::selection{
+  background-color: rgb(222, 22, 12);
+  color: rgb(34, 0, 255);
+}
+    </style>
+</head>
+<body>
+    <p>CSS adalah singkatan dari Cascading Style Sheets, yang digunakan untuk mengatur tampilan dan format halaman web. Dengan CSS, pengembang dapat mengontrol elemen-elemen seperti warna, font, dan tata letak, sehingga menciptakan desain yang menarik dan responsif.</p>
+
+    <h6>CSS adalah singkatan dari Cascading Style Sheets, yang digunakan untuk mengatur tampilan dan format halaman web. Dengan CSS, pengembang dapat mengontrol elemen-elemen seperti warna, font, dan tata letak, sehingga menciptakan desain yang menarik dan responsif.</h1>
+
+        <p>Berikut adalah peringkat merk mobil terlaris di Indonesia</p>
+<ul>
+    <li class="top-rank">Toyota</li>
+    <li>Daihatsu</li>
+    <li>Suzuki</li>
+    <li>Honda</li>
+    <li>Mitsubishi Motors</li>
+    <li>Isuzu</li>
+    <li>Hyundai</li>
+    <li>Hino</li>
+    <li>Wuling</li>
+</ul>
+
+</body>
+</html>

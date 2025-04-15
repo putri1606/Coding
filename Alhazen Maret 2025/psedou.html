@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pseudo Class</title>
+  <style>
+    body{
+      font-family: Arial, Helvetica;
+      margin:0;
+    }
+    
+    main.container{
+      display: flex;
+      height: 100vh;
+    }
+    
+    form.login-form{
+      width: auto;
+      margin: auto;
+    }
+    
+    form.login-form > fieldset{
+      border-radius: 5px;
+      padding: 10px;
+    }
+    
+    form.login-form input{
+      padding: 5px;
+      display: block;
+      width: auto;
+      margin-bottom: 10px;
+    }
+    
+    #submit{width:100%;}
+    
+    #submit:hover{
+      background-color: #e34eaa;
+      border-color: #fd0d81;
+      color: white;
+    }
+
+    a:visited{
+      color: rgb(228, 9, 9);
+    }
+
+    body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+    background-color: cornflowerblue;
+    padding: 10px;
+}
+
+ul > li{
+    display: inline;
+    margin-right: 10px;
+}
+
+ul > li > a{
+    text-decoration: none;
+    color: white;
+}
+
+ul > li > a:active{
+    text-decoration: none;
+    background-color: white;
+    color: blue;
+    padding:10px;
+}
+
+.focus-red:focus{
+    outline-color: red;
+    background-color: #1ec4e1;
+}
+
+ul > li:first-child{ /*untuk yang pertama. (TAPI KALAU MAU SEMUA BISA PAKAI UL > LI NYA SAJA*/
+    background-color: red;
+    color: white;
+  list-style-type: circle;
+  width: 100px;
+  border: 1px solid blue;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+  
+  </style>
+</head>
+<body>
+    <nav>
+        <ul class="navbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    
+  <main class="container">
+    <form class="login-form" action="" method="">
+      <fieldset>
+        <legend>Silahkan Log In</legend>
+        <input class="focus-red" type="text" name="username" id="username" placeholder="Masukkan Username" />
+        <input class="focus-red" type="password" name="password" id="password" placeholder="Masukkan Password" />
+        <input class="focus-red" type="submit" name="submit" id="submit" value="Log In" />
+      </fieldset>
+    </form>
+  </main>
+  <p>Klik <a href="https://google.com">di sini</a> untuk ke google.com.</p>
+
+  <p>Berikut adalah peringkat merk mobil terlaris di Indonesia</p>
+  <ul>
+      <li>Toyota</li>
+      <li>Daihatsu</li>
+      <li>Suzuki</li>
+      <li>Honda</li>
+      <li>Mitsubishi Motors</li>
+      <li>Isuzu</li>
+      <li>Hyundai</li>
+      <li>Hino</li>
+      <li>Wuling</li>
+  </ul>
+  
+</body>
+</html>
