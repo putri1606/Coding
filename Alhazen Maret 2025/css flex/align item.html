@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align item</title>
+    <style>
+        body{
+  font-family: Arial;  
+}
+
+.flex-container{
+  display: flex;
+  padding: 5px;
+  border: 1px solid blue;
+  margin-bottom: 8px;
+  height: 67px;
+}
+
+.flex-item{
+  background-color: #dc3545;
+  color: white;
+  border: 0.5px solid white;
+  padding: 10px;
+  width: 80px;
+  text-align: center;
+}
+
+.align-item-start{
+  align-items: flex-start;
+}
+
+.align-item-end{
+  align-items: flex-end;
+}
+
+.align-item-center{
+  align-items: center;
+}
+
+.align-item-stretch{ /*disesuaikan dengan pembunkgusnya atau paddingnya*/
+  align-items: stretch;
+}
+
+.align-item-baseline{
+  align-items: baseline;
+}
+
+    </style>
+</head>
+<body>
+    <main>        
+        <section class="flex-container align-item-start">
+            <div class="flex-item">HTML</div>
+            <div class="flex-item">CSS</div>
+            <div class="flex-item">JS</div>
+        </section>
+        <section class="flex-container align-item-end">
+            <div class="flex-item">HTML</div>
+            <div class="flex-item">CSS</div>
+            <div class="flex-item">JS</div>
+        </section>
+        <section class="flex-container align-item-center">
+            <div class="flex-item">HTML</div>
+            <div class="flex-item">CSS</div>
+            <div class="flex-item">JS</div>
+        </section>
+        <section class="flex-container align-item-stretch">
+            <div class="flex-item">HTML</div>
+            <div class="flex-item">CSS</div>
+            <div class="flex-item">JS</div>
+        </section>
+        <section class="flex-container align-item-baseline">
+            <div style="font-size: 12px;" class="flex-item">HTML</div>
+            <div style="font-size: 20px;"class="flex-item">CSS</div>
+            <div style="font-size: 16px;"class="flex-item">JS</div>
+        </section>
+    </main>
+    
+</body>
+</html>

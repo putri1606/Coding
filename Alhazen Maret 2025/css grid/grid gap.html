@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid gap</title>
+    <style>
+        body { /*untuk gap tinggal menambahkan colom gap saja*/
+            font-family: Arial;
+        }
+
+        .grid-container {
+            display: grid;
+            column-gap: 5px;
+            row-gap: 10px;
+            margin-bottom: 35px;
+            padding: 5px;
+            border: 0.5px solid red;
+        }
+
+        .four-columns {
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto auto;
+        }
+
+        article {
+            padding: 10px;
+            background-color: #0d6efd;
+            border-radius: 10px;
+            color: white;
+            text-align: center;
+        }
+
+        article.html {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        article.javascript {
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section class="grid-container four-columns">
+            <article class="html">
+                <p>HTML</p>
+            </article>
+            <article>
+                <p>CSS</p>
+            </article>
+            <article class="javascript">
+                <p>JavaScript</p>
+            </article>
+            <article>
+                <p>Bootstrap</p>
+            </article>
+            <article>
+                <p>PHP</p>
+            </article>
+            <article>
+                <p>MySQL</p>
+            </article>
+            <article>
+                <p>Laravel</p>
+            </article>
+        </section>
+    </main>
+
+</body>
+
+</html>

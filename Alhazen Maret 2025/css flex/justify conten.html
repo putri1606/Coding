@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justify content</title>
+    <style>
+        body{
+  font-family: Arial;  
+}
+
+.flex-container{
+  display: flex;
+  padding: 5px;
+  border: 1px solid blue;
+  margin-bottom: 8px;
+}
+
+.flex-item{
+  background-color: #dc3545;
+  color: white;
+  border: 0.5px solid white;
+  padding: 10px;
+  width: 80px;
+  text-align: center;
+}
+
+.flex-item-start{ /*kanan*/
+  justify-content: start;
+}
+
+.flex-item-end{ /*kiri*/
+  justify-content: end;
+}
+
+.flex-item-center{
+  justify-content: center;
+}
+
+.flex-item-space-around{ /*seimbang*/
+  justify-content: space-around;
+}
+
+.flex-item-space-between{ /*kanan kiri di ujung*/
+  justify-content: space-between;
+}
+
+    </style>
+</head>
+<body>
+    <main>        
+    <section class="flex-container flex-item-start">
+      <div class="flex-item">HTML</div>
+      <div class="flex-item">CSS</div>
+      <div class="flex-item">JS</div>
+    </section>
+    <section class="flex-container flex-item-end">
+      <div class="flex-item">HTML</div>
+      <div class="flex-item">CSS</div>
+      <div class="flex-item">JS</div>
+    </section>
+    <section class="flex-container flex-item-center">
+      <div class="flex-item">HTML</div>
+      <div class="flex-item">CSS</div>
+      <div class="flex-item">JS</div>
+    </section>
+    <section class="flex-container flex-item-space-around">
+      <div class="flex-item">HTML</div>
+      <div class="flex-item">CSS</div>
+      <div class="flex-item">JS</div>
+    </section>
+    <section class="flex-container flex-item-space-between">
+      <div class="flex-item">HTML</div>
+      <div class="flex-item">CSS</div>
+      <div class="flex-item">JS</div>
+    </section>
+</main>
+
+</body>
+</html>

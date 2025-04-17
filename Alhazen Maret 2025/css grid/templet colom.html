@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>templete colom</title>
+    <style>
+        body {
+            font-family: Arial;
+        }
+
+        .grid-container {
+            display: grid;
+            margin-bottom: 35px;
+            padding: 5px;
+            border: 0.5px solid red;
+        }
+
+        .four-columns {
+            grid-template-columns: auto auto auto auto;
+        }
+
+        .six-columns {
+            grid-template-columns: auto auto auto auto auto auto;
+        }
+
+        article {
+            padding: 10px;
+            background-color: #0d6efd;
+            color: white;
+            border: 0.5px solid white;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section class="grid-container four-columns">
+            <article>
+                <p>HTML</p>
+            </article>
+            <article>
+                <p>CSS</p>
+            </article>
+            <article>
+                <p>JavaScript</p>
+            </article>
+            <article>
+                <p>Bootstrap</p>
+            </article>
+            <article>
+                <p>PHP</p>
+            </article>
+            <article>
+                <p>MySQL</p>
+            </article>
+            <article>
+                <p>Laravel</p>
+            </article>
+        </section>
+        <section class="grid-container six-columns">
+            <article>
+                <p>HTML</p>
+            </article>
+            <article>
+                <p>CSS</p>
+            </article>
+            <article>
+                <p>JavaScript</p>
+            </article>
+            <article>
+                <p>Bootstrap</p>
+            </article>
+            <article>
+                <p>PHP</p>
+            </article>
+            <article>
+                <p>MySQL</p>
+            </article>
+            <article>
+                <p>Laravel</p>
+            </article>
+        </section>
+    </main>
+
+</body>
+
+</html>
