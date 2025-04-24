@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{ /*semakin gede menjadi satu colom, kalau semakin kecil menjadi banyak kolom*/
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container-fluid{
+    width: 100%;
+    background-color: lightgray;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.container{
+    margin: auto;
+}
+
+img{
+    max-width: 100%;
+    border-radius: 0.5rem;
+}
+
+.title{
+    font-size: 1.5rem;
+    margin-bottom: 3px;
+}
+
+.button{
+    padding: 5px;
+    background-color: #0d6efd;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+
+.button:hover{
+    background-color: #0a4db0;
+}
+
+hr{
+    border-top: .5px solid lightgray;
+}
+
+footer{
+    height: 100px;
+}
+
+@media only screen and (max-width: 576px){
+    .container{
+        max-width: 100%;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    section.latest-news{
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
+
+@media only screen and (min-width: 576px){
+    .container{
+        max-width: 100%;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    section.latest-news{
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .container{
+        max-width: 75%;
+    }
+
+    hr {
+        display: none;
+    }
+
+    section.latest-news{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 15px;
+    }
+
+    section.other-news{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 15px;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .container{
+        max-width: 60%;
+    }
+
+    hr {
+        display: none;
+    }
+
+    section.other-news{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 15px;
+    }
+
+    #first-other-news{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header class="container-fluid">
+        <nav class="container">
+            <h1>Selamat Datang</h1>
+        </nav>
+    </header>
+    
+    <main class="container">
+        <h1>Berita Terbaru</h1>
+        <section class="latest-news">
+            <article>
+                <p class="title">Berita Pertama</p>
+                <img src="https://picsum.photos/id/10/1200/600" alt="">
+                <p class="caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti obcaecati sequi quibusdam ullam minima cupiditate repudiandae! Eos sunt est delectus quam sapiente recusandae suscipit assumenda? . . .</p>
+                <a href="" class="button">Baca selengkapnya</a>
+                <hr>
+            </article>
+            <article>
+                <p class="title">Berita Kedua</p>
+                <img src="https://picsum.photos/id/10/1200/600" alt="">
+                <p class="caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti obcaecati sequi quibusdam ullam minima cupiditate repudiandae! Eos sunt est delectus quam sapiente recusandae suscipit assumenda? . . .</p>
+                <a href="" class="button">Baca selengkapnya</a>
+                <hr>
+            </article>
+        </section>
+    
+        <p class="title">Berita Lainnya</p>
+        <section class="other-news">
+            <article id="first-other-news">
+                <p class="title">Berita Ketiga</p>
+                <img src="https://picsum.photos/id/10/1200/600" alt="">
+                <p class="caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti obcaecati sequi quibusdam ullam minima cupiditate repudiandae! Eos sunt est delectus quam sapiente recusandae suscipit assumenda? . . .</p>
+                <a href="" class="button">Baca selengkapnya</a>
+                <hr>
+            </article>
+            <article>
+                <p class="title">Berita Keempat</p>
+                <img src="https://picsum.photos/id/10/1200/600" alt="">
+                <p class="caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti obcaecati sequi quibusdam ullam minima cupiditate repudiandae! Eos sunt est delectus quam sapiente recusandae suscipit assumenda? . . .</p>
+                <a href="" class="button">Baca selengkapnya</a>
+                <hr>
+            </article>
+            <article>
+                <p class="title">Berita Kelima</p>
+                <img src="https://picsum.photos/id/10/1200/600" alt="">
+                <p class="caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti obcaecati sequi quibusdam ullam minima cupiditate repudiandae! Eos sunt est delectus quam sapiente recusandae suscipit assumenda? . . .</p>
+                <a href="" class="button">Baca selengkapnya</a>
+                <hr>
+            </article>
+            <article>
+                <p class="title">Berita Ketujuh</p>
+                <img src="https://picsum.photos/id/10/1200/600" alt="">
+                <p class="caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti obcaecati sequi quibusdam ullam minima cupiditate repudiandae! Eos sunt est delectus quam sapiente recusandae suscipit assumenda? . . .</p>
+                <a href="" class="button">Baca selengkapnya</a>
+                <hr>
+            </article>
+            <article>
+                <p class="title">Berita Kedelapan</p>
+                <img src="https://picsum.photos/id/10/1200/600" alt="">
+                <p class="caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti obcaecati sequi quibusdam ullam minima cupiditate repudiandae! Eos sunt est delectus quam sapiente recusandae suscipit assumenda? . . .</p>
+                <a href="" class="button">Baca selengkapnya</a>
+                <hr>
+            </article>
+            <article>
+                <p class="title">Berita Kesembilan</p>
+                <img src="https://picsum.photos/id/10/1200/600" alt="">
+                <p class="caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti obcaecati sequi quibusdam ullam minima cupiditate repudiandae! Eos sunt est delectus quam sapiente recusandae suscipit assumenda? . . .</p>
+                <a href="" class="button">Baca selengkapnya</a>
+                <hr>
+            </article>
+            <article>
+                <p class="title">Berita Kesepuluh</p>
+                <img src="https://picsum.photos/id/10/1200/600" alt="">
+                <p class="caption">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti obcaecati sequi quibusdam ullam minima cupiditate repudiandae! Eos sunt est delectus quam sapiente recusandae suscipit assumenda? . . .</p>
+                <a href="" class="button">Baca selengkapnya</a>
+                <hr>
+            </article>
+        </section>        
+    </main>
+    
+    <footer class="container-fluid">
+        <p class="title" style="text-align:center;">By Alhazen Academy</p>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design</title>
+    <style>
+    h1::before{
+        content: "Layar ";
+    }
+    
+    @media only screen and (max-width: 576px){
+        em{
+            color: gold;
+        }
+    
+        em::after{
+            content: "Smartphone";
+        }
+    }
+    
+    @media only screen and (min-width: 576px){
+        em{
+            color: gold;
+        }
+    
+        em::after{
+            content: "Smartphone";
+        }
+    }
+    
+    @media only screen and (min-width: 768px){
+        em{
+            color: green;
+        }
+    
+        em::after{
+            content: "Tablet";
+        }
+    }
+    
+    @media only screen and (min-width: 992px){
+        em{
+            color: blue;
+        }
+    
+        em::after{
+            content: "Desktop";
+        }
+    }
+    </style>
+</head>
+<body>
+    <p> <strong>width=device-width</strong>  akan membuat lebar halaman website mengikuti setiap device.
+        <br>
+    <strong>initial-scale=1.0</strong>
+     akan membuat skala awal saat halaman diakses menjadi ukuran yang proporsional
+    </p>
+    
+    <main>
+        <h1><em></em></h1>
+    </main>
+    
+    
+</body>
+</html>
