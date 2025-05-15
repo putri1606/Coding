@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+<body>
+    
+    <h1>
+        belajar javascript
+    </h1>
+    <p>
+        javascript adalah bahasa pemrograman yang digunakan untuk membuat halaman web menjadi interaktif
+        dan dinamis. javascript dapat digunakan untuk memanipulasi elemen HTML, mengubah gaya CSS, dan menangani peristiwa pengguna seperti klik, ketikan, dan gerakan mouse.
+    </p>
+    <br>
+    <p>
+        alert adalah fungsi untuk menampilkan pesan ke pengguna atau POP UP
+        <br>
+        prompt adalah fungsi untuk meminta input dari pengguna melalui kotak dialog. Kotak dialog ini menampilkan pesan dan sebuah kolom input untuk pengguna memasukkan nilai. Setelah pengguna mengisi kolom input dan menekan tombol OK, nilai yang dimasukkan akan dikembalikan sebagai string. Jika pengguna menekan tombol Cancel, maka fungsi prompt akan mengembalikan nilai null.
+    </p>
+<br>
+<p>
+    variabel adalah tempat untuk menyimpan data atau nilai dalam javascript. Ada beberapa jenis variabel dalam javascript, yaitu:
+    <ul>
+        <li>var</li>
+        <ul>
+            <li>var adalah cara lama untuk mendeklarasikan variabel. Variabel yang dideklarasikan dengan var memiliki cakupan fungsi atau global, tergantung di mana mereka dideklarasikan.</li>
+            <li>var dapat dideklarasikan ulang dan diinisialisasi kembali.</li>
+        </ul>
+        <li>let</li>
+        <ul>
+            <li>let adalah cara baru untuk mendeklarasikan variabel. Variabel yang dideklarasikan dengan let memiliki cakupan blok, artinya hanya dapat diakses di dalam blok tempat mereka dideklarasikan.</li>
+            <li>let tidak dapat dideklarasikan ulang, tetapi dapat diinisialisasi kembali.</li>
+        </ul>
+        <li>const</li>
+        <ul>
+            <li>const adalah cara untuk mendeklarasikan variabel yang nilainya tidak dapat diubah setelah dideklarasikan. Variabel yang dideklarasikan dengan const juga memiliki cakupan blok.</li>
+            <li>const tidak dapat dideklarasikan ulang dan tidak dapat diinisialisasi kembali.</li>
+        </ul>
+    </ul>
+</p>
+
+<script src="script.js"></script>
+    <script> // alert adalah fungsi untuk menampilkan pesan ke pengguna atau POP UP //
+        alert("Hello, World!")
+        prompt("Masukkan nama anda:")
+
+        var name = "Putri"
+       // alert(name)
+       name = "Putri" // bisa diubah
+       var name = "Mawar" // bisa dideklarasikan ulang
+        console.log(name)
+
+        let address = "Jakarta"
+        address = "Bandung" // bisa diubah
+        console.log(address)
+        // let address = "Bandung" // tidak bisa dideklarasikan ulang karena let memiliki cakupan blok
+        let age = 20
+        // age = 25 // bisa diubah
+        // let age = 25 // tidak bisa dideklarasikan ulang karena let memiliki cakupan blok
+
+        const pi = 3.14
+        // pi = 3.14159 // tidak bisa diubah karena const adalah konstanta (artinya nilainya tidak dapat diubah setelah dideklarasikan)
+    
+    </script>
+</body>
+</html>
