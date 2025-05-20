@@ -18,4 +18,5 @@ let exp = 3 ** 4
 console.log(exp)
 
 let mod = 10 % 3 // sisa bagi dari 10 bagi 3
+mod = 10 % 4 // sisa bagi dari 10 bagi 2
 console.log(mod)

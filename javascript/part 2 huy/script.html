@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Belajar js
+
+     <script>
+        let side = prompt("Masukkan panjang sisi kubus (cm):")
+        let area = side * side
+        alert("Luas kubus adalah " + area + " cm²")
+        let volume = side * side * side
+        console.log(`Luas kubus adalah ${area} cm²`)
+
+        let number = prompt("Masukkan angka:")
+        if (number % 2 == 0) {
+            alert(`${number} adalah bilangan genap`) 
+        }
+        else {
+            alert(`${number} adalah bilangan ganjil`)
+        }
+
+
+        if (number > 0) {
+            alert(`${number} adalah bilangan positif`)
+        }
+        else if (number < 0) {
+            alert(`${number} adalah bilangan negatif`)
+        }
+        else {
+            alert(`${number} adalah nol`)
+        }
+           
+       
+
+        hariIni = prompt( "Bagaimana jika lapar hari ini?")
+        if (hariIni == "iya" ) {
+            alert("Makan")
+        }
+        else if (hariIni == "tidak") {
+            alert("Jangan makan")
+        }
+        else {
+            alert("Masukkan jawaban yang benar")
+        }
+
+       let number2 = prompt("Masukkan angka:")
+
+       mod = number % 2;
+       switch (mod) {
+        case 0:
+            alert(`${number} adalah bilangan genap`)
+            break;
+        case 1:
+            alert(`${number} adalah bilangan ganjil`)
+            break;
+        default:
+            alert("Masukkan angka yang benar")
+            break;
+       }
+    
+    
+     </script>
+</body>
+</html>
